@@ -37,11 +37,13 @@ const Login = () => {
 	};
 
 	return (
+		<>
 		<div className={styles.login_container}>
 			<div className={styles.login_form_container}>
 				<div className={styles.left}>
 					<form className={styles.form_container} onSubmit={handleSubmit}>
-						<h1>Login to Your Account</h1>
+						<h1> Task Managment System</h1>
+						<h2>Login to Your Account</h2>
 						<input
 							type="email"
 							placeholder="Email"
@@ -66,9 +68,7 @@ const Login = () => {
 						</button>
 						
 					</form>
-					<a href="/admin"><button   className={styles.green_btn}>
-							Go to Admin
-						</button></a>
+					
 				</div>
 				<div className={styles.right}>
 					<h1>New Here ?</h1>
@@ -79,7 +79,12 @@ const Login = () => {
 					</Link>
 				</div>
 			</div>
+			
 		</div>
+		<a href="/admin"><button   className={styles.green_btn}>
+							Go to Admin
+						</button></a>
+		</>
 	);
 };
 
